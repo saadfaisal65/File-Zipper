@@ -21,7 +21,7 @@
 using namespace std;
 namespace fs = std::filesystem;
 
-                                                                                    // Node structure for Huffman tree
+// Node structure for Huffman tree
 class Node
 {
 public:
@@ -33,7 +33,7 @@ public:
     Node(char data, unsigned freq) : data(data), freq(freq), left(NULL), right(NULL) {}
 };
 
-                                                                                    // Comparison function for priority queue
+// Comparison function for priority queue
 class Compare
 {
 public:
@@ -102,7 +102,7 @@ private:
         generateCodes(node->right, str + "1");
     }
 
-                                                                                    // Helper function to write bits to file
+    // Helper function to write bits to file
     void writeBits(ofstream &outFile, const string &bits)
     {
         for (char bit : bits)
@@ -119,7 +119,7 @@ private:
         }
     }
 
-                                                                                 // Helper function to read bits from file
+    // Helper function to read bits from file
     string readBits(ifstream &inFile)
     {
         string bits;
@@ -156,13 +156,13 @@ private:
         return true;
     }
 
-                                                                                    // Add padding info to compressed file
+    // Add padding info to compressed file
     void writePadding(ofstream &outFile, int padding)
     {
         outFile.write(reinterpret_cast<const char *>(&padding), sizeof(padding));
     }
 
-                                                                                     // Read padding info from compressed file
+    // Read padding info from compressed file
     int readPadding(ifstream &inFile)
     {
         int padding;
@@ -170,7 +170,7 @@ private:
         return padding;
     }
 
-                                                                                // Add new helper method for bit processing
+    // Add new helper method for bit processing
     void processBit(bool bit, Node *&current, ofstream &outFile, size_t &processedChars)
     {
         current = bit ? current->right : current->left;
@@ -182,7 +182,7 @@ private:
         }
     }
 
-                                                                                        // Add method to write frequency table
+    // Add method to write frequency table
     void writeFrequencyTable(ofstream &outFile, const unordered_map<char, int> &frequency)
     {
         size_t freqSize = frequency.size();
@@ -195,7 +195,7 @@ private:
         }
     }
 
-                                                                                        // Add method to read frequency table
+    // Add method to read frequency table
     bool readFrequencyTable(ifstream &inFile, unordered_map<char, int> &frequency, size_t &totalChars)
     {
         size_t freqSize;
@@ -241,7 +241,7 @@ private:
         }
     }
 
-                                                                                  // Add this helper method to get file size
+    // Add this helper method to get file size
     size_t getFileSize(ifstream &file)
     {
         streampos currentPos = file.tellg();
@@ -259,19 +259,19 @@ public:
         cleanup(root);
     }
 
-                                                                                     // Build Huffman tree from character frequencies
+    // Build Huffman tree from character frequencies
     void buildTree(const unordered_map<char, int> &frequency)
     {
         priority_queue<Node *, vector<Node *>, Compare> pq;
 
-                                                                                     // Create sorted vector of frequency pairs
+        // Create sorted vector of frequency pairs
         vector<pair<char, int>> sortedFreq;
         for (const auto &pair : frequency)
         {
             sortedFreq.push_back(pair);
         }
 
-                                                                                     // Sort by frequency first, then by character for ties
+        // Sort by frequency first, then by character for ties
         sort(sortedFreq.begin(), sortedFreq.end(),
              [](const pair<char, int> &a, const pair<char, int> &b)
              {
@@ -282,7 +282,7 @@ public:
                  return a.second < b.second; // Sort by frequency
              });
 
-                                                                                    // Create nodes in sorted order
+        // Create nodes in sorted order
         for (const auto &pair : sortedFreq)
         {
             pq.push(new Node(pair.first, pair.second));
@@ -304,7 +304,7 @@ public:
         root = pq.empty() ? nullptr : pq.top();
     }
 
-                                                                                    // Generate Huffman codes
+    // Generate Huffman codes
     void generateHuffmanCodes()
     {
         if (root)
@@ -317,7 +317,7 @@ public:
         }
     }
 
-                                                                                                 // Add these new methods
+    // Add these new methods
     void huffer(const map<char, int> &frequencyMap)
     {
         lastOperation = chrono::system_clock::now();
@@ -333,7 +333,8 @@ public:
         buildTree(freq);
     }
 
-                                                                                                    // Compress a file
+    // Compress a file
+
     bool compressFile(const string &inputFile, const string &outputFile)
     {
         try
@@ -346,14 +347,14 @@ public:
             if (!outFile)
                 return false;
 
-                                                                                                     // Write file extension
+            // Write file extension
             fs::path inputPath(inputFile);
             originalFileExtension = inputPath.extension().string();
             size_t extLen = originalFileExtension.length();
             outFile.write(reinterpret_cast<const char *>(&extLen), sizeof(extLen));
             outFile.write(originalFileExtension.c_str(), extLen);
 
-                                                                                                    // Calculate frequencies
+            // Calculate frequencies
             vector<char> fileContent;
             char ch;
             while (inFile.get(ch))
@@ -364,22 +365,22 @@ public:
             FrequencyCounter counter;
             counter.countFrequencies(fileContent);
 
-                                                                                                    // Write frequency table
+            // Write frequency table
             const auto &freqMap = counter.getFrequencyMap();
             writeFrequencyTable(outFile, unordered_map<char, int>(freqMap.begin(), freqMap.end()));
 
-                                                                                                     // Use huffer with timestamp
+            // Use huffer with timestamp
             huffer(freqMap);
 
-                                                                                                        // Write data size
+            // Write data size
             size_t dataSize = fileContent.size();
             outFile.write(reinterpret_cast<const char *>(&dataSize), sizeof(dataSize));
 
-                                                                                                        // Reset bit counting
+            // Reset bit counting
             bitCount = 0;
             byte = 0;
 
-                                                                                                        // Compress data
+            // Compress data
             for (char c : fileContent)
             {
                 if (huffmanCode.find(c) == huffmanCode.end())
@@ -410,7 +411,7 @@ public:
         }
     }
 
-                                                                                            // Decompress a file
+    // Decompress a file
 
     bool decompressFile(const string &inputFile, const string &outputFile)
     {
@@ -420,44 +421,44 @@ public:
             if (!inFile)
                 return false;
 
-                                                                                // Read and validate file header
+            // Read and validate file header
             string originalExt;
             if (!readOriginalExtension(inFile, originalExt))
                 return false;
 
-                                                                        // Create output file with directories
+            // Create output file with directories
             fs::path outputPath(outputFile);
             fs::create_directories(outputPath.parent_path());
             ofstream outFile(outputFile, ios::binary);
             if (!outFile)
                 return false;
 
-                                                                                    // Read frequency table and validate
+            // Read frequency table and validate
             unordered_map<char, int> frequency;
             size_t totalChars = 0;
             if (!readFrequencyTable(inFile, frequency, totalChars))
                 return false;
 
-                                                                                         // Convert to map for FrequencyCounter
+            // Convert to map for FrequencyCounter
             map<char, int> freqMap(frequency.begin(), frequency.end());
             FrequencyCounter counter;
             counter.setFrequencyMap(freqMap);
 
-                                                                                            // Use deHuffer with timestamp
+            // Use deHuffer with timestamp
             deHuffer(freqMap);
 
-                                                                                        // Read original data size
+            // Read original data size
             size_t originalSize;
             inFile.read(reinterpret_cast<char *>(&originalSize), sizeof(originalSize));
             if (originalSize != totalChars)
                 return false;
 
-                                                                                            // Build Huffman tree
+            // Build Huffman tree
             buildTree(frequency);
             if (!root)
                 return false;
 
-                                                                            // Read padding information
+            // Read padding information
             streampos dataStart = inFile.tellg();
             size_t fileSize = getFileSize(inFile);
             inFile.seekg(-sizeof(int), ios::end);
@@ -466,14 +467,14 @@ public:
             if (padding < 0 || padding > 7)
                 return false;
 
-                                                                                            // Process compressed data
+            // Process compressed data
             inFile.seekg(dataStart);
             Node *current = root;
             size_t processedChars = 0;
             size_t dataSize = fileSize - dataStart - sizeof(int);
             char byteRead;
 
-                                                         // Process bytes directly without buffering for accurate ordering
+            // Process bytes directly without buffering for accurate ordering
             while (inFile.get(byteRead) && processedChars < totalChars)
             {
                 bool isLastByte = (inFile.tellg() == (fileSize - sizeof(int)));
@@ -490,14 +491,14 @@ public:
         }
     }
 
-                                                                                             // Get the Huffman codes
+    // Get the Huffman codes
     const unordered_map<char, string> &getHuffmanCodes() const
     {
         return huffmanCode;
     }
 };
 
-                                                                                                // File dialog helper function
+// File dialog helper function
 string openFileDialog(bool save = false)
 {
     string filename;
@@ -541,7 +542,7 @@ string openFileDialog(bool save = false)
     return filename;
 }
 
-                                                                        // Add this structure after existing classes
+// Add this structure after existing classes
 struct FileRecord
 {
     string originalPath;
@@ -599,7 +600,7 @@ public:
         fs::path path(inputPath);
         string originalExt = ".txt"; // Default to .txt
 
-                                                                    // Read original extension from compressed file header
+        // Read original extension from compressed file header
         ifstream in(inputPath, ios::binary);
         if (in)
         {
@@ -627,7 +628,7 @@ void guiMenu()
     GLFWwindow *window = glfwCreateWindow(800, 600, "File Zipper", NULL, NULL);
     glfwMakeContextCurrent(window);
 
-                                                                                        // Initialize GLEW
+    // Initialize GLEW
     if (glewInit() != GLEW_OK)
     {
         std::cerr << "Failed to initialize GLEW" << std::endl;
@@ -654,7 +655,7 @@ void guiMenu()
     bool showHistory = false;
     string historyContent;
 
-                                                                                                    // Set ImGui style
+    // Set ImGui style
     ImGui::GetStyle().WindowRounding = 5.0f;
     ImGui::GetStyle().FrameRounding = 4.0f;
     ImGui::GetStyle().GrabRounding = 3.0f;
@@ -677,7 +678,7 @@ void guiMenu()
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
-                                                                                    // Center window
+        // Center window
         ImGui::SetNextWindowPos(ImVec2(400, 300), ImGuiCond_Always, ImVec2(0.5f, 0.5f));
         ImGui::SetNextWindowSize(ImVec2(600, 400));
 
@@ -700,15 +701,8 @@ void guiMenu()
             ImGui::Text("Password:");
             ImGui::InputText("##password", password, sizeof(password), ImGuiInputTextFlags_Password);
 
+            // CHECKING AND VERIFYING THAT IT IS ADMIN OR USER
 
-
-
-                  //CHECKING AND VERIFYING THAT IT IS ADMIN OR USER         
-
-
-
-                  
-                      
             if (ImGui::Button("Login"))
             {
                 if (strcmp(username, "admin") == 0 && strcmp(password, "admin") == 0)
@@ -807,6 +801,8 @@ void guiMenu()
                     strncpy(inputPath, path.c_str(), sizeof(inputPath) - 1);
                 }
             }
+
+            // Saving the File in path
 
             if (ImGui::Button("Compress", ImVec2(120, 0)))
             {
