@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "FileZipper",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -39,8 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "FileZipper::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-FileZipper-Release-1c0ad1a6d661e36e0811.json",
+					"jsonFile" : "target-FileZipper-Release-c848914a60f9fff05202.json",
 					"name" : "FileZipper",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kill_exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kill_exe-Release-0ff6f4d1a07f145153b4.json",
+					"name" : "kill_exe",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "E:/DSA Project/build",
-		"source" : "E:/DSA Project"
+		"build" : "C:/Users/saadf/File-Zipper/build",
+		"source" : "C:/Users/saadf/File-Zipper"
 	},
 	"version" : 
 	{

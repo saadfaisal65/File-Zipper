@@ -18,6 +18,7 @@
 			"set_target_properties",
 			"copy_imported_target_properties",
 			"find_package",
+			"add_dependencies",
 			"add_definitions",
 			"target_include_directories"
 		],
@@ -86,17 +87,23 @@
 			{
 				"command" : 5,
 				"file" : 0,
+				"line" : 59,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
 				"line" : 5,
 				"parent" : 0
 			},
 			{
-				"command" : 5,
+				"command" : 6,
 				"file" : 0,
 				"line" : 6,
 				"parent" : 0
 			},
 			{
-				"command" : 6,
+				"command" : 7,
 				"file" : 0,
 				"line" : 34,
 				"parent" : 0
@@ -119,23 +126,23 @@
 					"define" : "GLFW_DLL"
 				},
 				{
-					"backtrace" : 10,
+					"backtrace" : 11,
 					"define" : "_CRT_SECURE_NO_WARNINGS"
 				},
 				{
-					"backtrace" : 11,
+					"backtrace" : 12,
 					"define" : "__USE_MINGW_ANSI_STDIO"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 12,
-					"path" : "E:/DSA Project/imgui"
+					"backtrace" : 13,
+					"path" : "C:/Users/saadf/File-Zipper/imgui"
 				},
 				{
-					"backtrace" : 12,
-					"path" : "E:/DSA Project/imgui/backends"
+					"backtrace" : 13,
+					"path" : "C:/Users/saadf/File-Zipper/imgui/backends"
 				}
 			],
 			"language" : "CXX",
@@ -158,6 +165,13 @@
 				6,
 				7
 			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 10,
+			"id" : "kill_exe::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "FileZipper::@6890427a1f51a3e7e1df",

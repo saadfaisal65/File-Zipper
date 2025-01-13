@@ -50,4 +50,11 @@ if(WIN32)
         gdi32
         dwmapi
     )
+
+    # Add pre-build step to kill any running instances
+    add_custom_target(kill_exe
+        COMMAND taskkill /F /IM FileZipper.exe || exit 0
+        COMMENT "Attempting to kill running instances of FileZipper.exe"
+    )
+    add_dependencies(FileZipper kill_exe)
 endif()

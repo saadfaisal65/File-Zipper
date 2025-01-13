@@ -22,3 +22,291 @@ Decompress: compressed_decompressed.txt
 Type: 
 Time: Tue Jan  7 17:14:29 2025
 
+Original: C:\Users\saadf\OneDrive\Desktop\1281-dcn-important.txt
+Compressed: 1281-dcn-important_compressed.bin
+Decompress: 
+Type: .txt
+Time: Sun Jan 12 20:32:24 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\1281-dcn-important.txt
+Compressed: 1281-dcn-important_compressed.bin
+Decompress: 
+Type: .txt
+Time: Sun Jan 12 20:44:36 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\1281-dcn-important.txt
+Compressed: C:\Users\Public\Compressed Files\1281-dcn-important_compressed.bin
+Decompress: 
+Type: .txt
+Time: Sun Jan 12 20:55:52 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\1281-dcn-important.txt
+Compressed: C:\Users\Public\Compressed Files\1281-dcn-important_compressed.bin
+Decompress: 
+Type: .txt
+Time: Sun Jan 12 20:56:40 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\1281-dcn-important_compressed.bin
+Decompress: C:\Users\Public\Compressed Files\1281-dcn-important_compressed_decompressed.txt
+Type: 
+Time: Sun Jan 12 20:59:44 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\test.txt
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: 
+Type: .txt
+Time: Sun Jan 12 21:06:23 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Compressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Sun Jan 12 21:07:12 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Sun Jan 12 21:09:55 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Sun Jan 12 21:17:32 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Sun Jan 12 21:27:23 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\1281-dcn-important_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\1281-dcn-important_compressed_decompressed.txt
+Type: 
+Time: Sun Jan 12 21:29:00 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Sun Jan 12 21:33:50 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Sun Jan 12 21:34:18 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\test.txt
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: 
+Type: .txt
+Time: Sun Jan 12 21:40:16 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Sun Jan 12 21:40:48 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\test.txt
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: 
+Type: .txt
+Time: Sun Jan 12 21:50:54 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Sun Jan 12 21:51:18 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\test.txt
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: 
+Type: .txt
+Time: Sun Jan 12 22:17:11 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Sun Jan 12 22:17:28 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Sun Jan 12 22:36:33 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\test.txt
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: 
+Type: .txt
+Time: Sun Jan 12 23:13:24 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Sun Jan 12 23:15:27 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\test.txt
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: 
+Type: .txt
+Time: Mon Jan 13 11:47:12 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Mon Jan 13 11:47:29 2025
+
+Original: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Compressed: C:\Users\Public\Compressed Files\test_compressed_decompressed_compressed.bin
+Decompress: 
+Type: .txt
+Time: Mon Jan 13 11:48:05 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed_decompressed_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed_compressed_decompressed.txt
+Type: 
+Time: Mon Jan 13 11:48:20 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Mon Jan 13 11:54:19 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\1281-dcn-important.txt
+Compressed: C:\Users\Public\Compressed Files\1281-dcn-important_compressed.bin
+Decompress: 
+Type: .txt
+Time: Mon Jan 13 11:55:15 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\1281-dcn-important_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\1281-dcn-important_compressed_decompressed.txt
+Type: 
+Time: Mon Jan 13 11:55:30 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\test.txt
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: 
+Type: .txt
+Time: Mon Jan 13 11:58:16 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Mon Jan 13 11:58:51 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\test.txt
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: 
+Type: .txt
+Time: Mon Jan 13 13:05:57 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Mon Jan 13 13:06:22 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\1281-dcn-important_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\1281-dcn-important_compressed_decompressed.txt
+Type: 
+Time: Mon Jan 13 13:08:14 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\test.txt
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: 
+Type: .txt
+Time: Mon Jan 13 13:13:16 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Mon Jan 13 13:13:32 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\1281-dcn-important_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\1281-dcn-important_compressed_decompressed.txt
+Type: 
+Time: Mon Jan 13 13:23:59 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\test.txt
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: 
+Type: .txt
+Time: Mon Jan 13 13:27:15 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\test.txt
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: 
+Type: .txt
+Time: Mon Jan 13 13:33:56 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Mon Jan 13 13:34:15 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\test.txt
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: 
+Type: .txt
+Time: Mon Jan 13 13:35:19 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Mon Jan 13 13:35:39 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\test.txt
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: 
+Type: .txt
+Time: Mon Jan 13 13:43:43 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Mon Jan 13 13:44:01 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\test.txt
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: 
+Type: .txt
+Time: Mon Jan 13 14:20:25 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\test_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\test_compressed_decompressed.txt
+Type: 
+Time: Mon Jan 13 14:20:37 2025
+
+Original: C:\Users\saadf\OneDrive\Desktop\Saad.txt
+Compressed: C:\Users\Public\Compressed Files\Saad_compressed.bin
+Decompress: 
+Type: .txt
+Time: Mon Jan 13 14:46:32 2025
+
+Original: 
+Compressed: C:\Users\Public\Compressed Files\Saad_compressed.bin
+Decompress: C:\Users\Public\Decompressed Files\Saad_compressed_decompressed.txt
+Type: 
+Time: Mon Jan 13 14:46:44 2025
+

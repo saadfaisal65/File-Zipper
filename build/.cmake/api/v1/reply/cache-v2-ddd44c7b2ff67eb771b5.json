@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "e:/DSA Project/build"
+			"value" : "c:/Users/saadf/File-Zipper/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "30"
+			"value" : "31"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -563,7 +563,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/DSA Project/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/saadf/File-Zipper/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -647,7 +647,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/DSA Project"
+			"value" : "C:/Users/saadf/File-Zipper"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1319,7 +1319,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/DSA Project/build"
+			"value" : "C:/Users/saadf/File-Zipper/build"
 		},
 		{
 			"name" : "FileZipper_IS_TOP_LEVEL",
@@ -1343,7 +1343,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/DSA Project"
+			"value" : "C:/Users/saadf/File-Zipper"
 		},
 		{
 			"name" : "GLEW_DIR",
@@ -1420,6 +1420,30 @@
 			],
 			"type" : "STRING",
 			"value" : "glu32"
+		},
+		{
+			"name" : "_CMAKE_CXX_LINKER_PUSHPOP_STATE_SUPPORTED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "linker supports push/pop state"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
+		},
+		{
+			"name" : "_CMAKE_C_LINKER_PUSHPOP_STATE_SUPPORTED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "linker supports push/pop state"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

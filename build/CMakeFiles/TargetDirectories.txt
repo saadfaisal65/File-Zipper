@@ -1,3 +1,4 @@
-E:/DSA Project/build/CMakeFiles/FileZipper.dir
-E:/DSA Project/build/CMakeFiles/edit_cache.dir
-E:/DSA Project/build/CMakeFiles/rebuild_cache.dir
+C:/Users/saadf/File-Zipper/build/CMakeFiles/FileZipper.dir
+C:/Users/saadf/File-Zipper/build/CMakeFiles/kill_exe.dir
+C:/Users/saadf/File-Zipper/build/CMakeFiles/edit_cache.dir
+C:/Users/saadf/File-Zipper/build/CMakeFiles/rebuild_cache.dir
